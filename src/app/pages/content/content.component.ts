@@ -19,7 +19,7 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe( value =>
-     this.id = value.get("id")
+      this.id = value.get("id")
     )
 
     this.setValuesToComponent(this.id)
